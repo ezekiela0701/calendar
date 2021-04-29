@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<title>Calendar Interface</title>
+
+		<!-- Font Awesome Icons -->
+		<link rel="stylesheet" href="{{asset('boAsset/plugins/fontawesome-free/css/all.min.css')}}">
+		<!-- overlayScrollbars -->
+		<link rel="stylesheet" href="{{asset('boAsset/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="{{asset('boAsset/dist/css/adminlte.min.css')}}">
+		<!-- Google Font: Source Sans Pro -->
+		<link href="{{asset('boAsset/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet')}}">
+		
+		<link rel="stylesheet" href="{{asset('boAsset/plugins/fullcalendar/main.min.css')}}">
+		<link rel="stylesheet" href="{{asset('boAsset/plugins/fullcalendar-daygrid/main.min.css')}}">
+		<link rel="stylesheet" href="{{asset('boAsset/plugins/fullcalendar-timegrid/main.min.css')}}">
+		<link rel="stylesheet" href="{{asset('boAsset/plugins/fullcalendar-bootstrap/main.min.css')}}">
+			
+	</head>
+	<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+		<div
+			class="wrapper">
+			<!-- Navbar -->
+			{% include ("admin/components/navbar.html.twig") %}
+			<!-- /.navbar -->
+
+			<!-- Main Sidebar Container -->
+			{# {% include ("admin/components/sidebar.html.twig") %} #}
+
+			<!-- Content Wrapper. Contains page content -->
+				<div class="content-wraer">{% block body %}{% endblock %}
+			
+				</div>
+				<!-- /.content-wrapper -->
+
+				<!-- Control Sidebar --><aside
+					class="control-sidebar control-sidebar-dark"> <!-- Control sidebar content goes here -->
+				</aside>
+				<!-- /.control-sidebar -->
+
+				<!-- Main Footer -->
+				<footer class="main-footer">
+					<strong>Copyright &copy; 2014-2019
+						<a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+					All rights reserved.
+					<div class="float-right d-none d-sm-inline-block">
+						<b>Version</b>
+						3.0.4
+					</div>
+				</footer>
+			</div>
+			<!-- ./wrapper -->
+
+			<!-- REQUIRED SCRIPTS -->
+			<!-- jQuery -->
+			<script src="{{asset('boAsset/plugins/jquery/jquery.min.js')}}"> </script>
+			<!-- Bootstrap -->
+			<script src="{{asset('boAsset/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+			<!-- overlayScrollbars -->
+			<script src="{{asset('boAsset/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+			<!-- jQuery UI -->
+			<script src="{{asset('boAsset/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+			<!-- AdminLTE App -->
+			<script src="{{asset('boAsset/dist/js/adminlte.js')}}"></script>
+
+			<!-- OPTIONAL SCRIPTS -->
+			<script src="{{asset('boAsset/dist/js/demo.js')}}"></script>
+
+			<!-- PAGE PLUGINS -->
+			<!-- jQuery Mapael -->
+			<script src="{{asset('boAsset/plugins/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
+			<script src="{{asset('boAsset/plugins/raphael/raphael.min.js')}}"></script>
+			<script src="{{asset('boAsset/plugins/jquery-mapael/jquery.mapael.min.js')}}"></script>
+			<script src="{{asset('boAsset/plugins/jquery-mapael/maps/usa_states.min.js')}}"></script>
+			<!-- ChartJS -->
+			<script src="{{asset('boAsset/plugins/chart.js/Chart.min.js')}}"></script>
+
+			<script src="{{asset('boAsset/plugins/moment/moment.min.js')}}"></script>
+			<script src="{{asset('boAsset/plugins/fullcalendar/main.min.js')}}"></script>
+			<script src="{{asset('boAsset/plugins/fullcalendar-daygrid/main.min.js')}}"></script>
+			<script src="{{asset('boAsset/plugins/fullcalendar-timegrid/main.min.js')}}"></script>
+			<script src="{{asset('boAsset/plugins/fullcalendar-interaction/main.min.js')}}"></script>
+			<script src="{{asset('boAsset/plugins/fullcalendar-bootstrap/main.min.js')}}"></script>
+
+			<!-- PAGE SCRIPTS -->
+			{# <script src="{{asset('boAsset/dist/js/pages/dashboard2.js')}}"></script> #}
+			{% block javascripts %}{% endblock %}
+
+			</body>
+	</html>

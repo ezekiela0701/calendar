@@ -1,0 +1,17 @@
+{{ form_start(formEvent) }}
+    <div class="form-group">
+        {{form_row(formEvent.title)}}
+    </div>
+    <div class="form-group">
+        {{form_row(formEvent.start)}}
+    </div>
+    <div class="form-group">
+        {{form_row(formEvent.backgroundcolor)}}
+    </div>
+    <div class="form-group">
+        {{form_row(formEvent.allday)}}
+    </div>
+    <div class="form-group">
+         <button type="submit" class="btn btn-block btn-primary">Ajouter</button>
+    </div>
+{{ form_end(formEvent) }}
