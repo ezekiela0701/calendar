@@ -1,3 +1,6 @@
+# cloner le projet en faisant
+git clone https://github.com/ezekiela0701/calendar.git
+
 # install composer
 composer install
 
